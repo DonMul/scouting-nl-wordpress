@@ -143,3 +143,34 @@ h2.entry-title a {
     color: white;
     padding-top: 50px;
 }
+
+.widget-title {
+    font-size: 24px;
+}
+
+#searchform .screen-reader-text {
+    display: none;
+}
+
+.sidebar input[type=submit] {
+    background-image: url('img/mainbody_sprite.png');
+    background-repeat: no-repeat;
+    background-position: 0 -1000px;
+    border: none;
+    background-color: transparent;
+    height: 60px;
+    line-height: 18px;
+    width: 130px;
+    color: #ffffff;
+    font-weight: 900;
+}
+
+input[type=text] {
+    border-radius: 15px;
+    border: 1px solid #d5d5d5;
+}
+
+.sidebar input[type=submit]:hover {
+    background-position: 0 -920px;
+    color: #1A368D;
+}

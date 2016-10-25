@@ -27,7 +27,6 @@
 	</div><!-- .entry-content -->
 
 	<footer class="entry-footer">
-		<?php scouting_nl_meta(); ?>
 		<?php
 			edit_post_link(
 				sprintf(
