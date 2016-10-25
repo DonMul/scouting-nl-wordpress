@@ -12,7 +12,10 @@
 <body>
 <div id="header-wrapper">
 	<div id="header" class="container">
-		<img class="header-image" src="<?php header_image(); ?>"/>
+		<div class="header-image-container">
+			<img class="header-image" src="<?php header_image(); ?>"/>
+			<div class="header-text"><?= get_bloginfo('name'); ?></div>
+		</div>
 		<?php if ( has_nav_menu( 'primary' )): ?>
 			<?php create_bootstrap_menu('primary'); ?>
 		<?php endif; ?>

@@ -3,7 +3,7 @@
 <div id="primary" class="content-area">
 	<main id="main" class="site-main" role="main">
 		<div class="row">
-			<div class="col-xs-12 col-lg-<?= is_active_sidebar( 'sidebar' ) ? 8 : 12 ?>">
+			<div class="col-xs-12 col-sm-<?= is_active_sidebar( 'sidebar' ) ? 8 : 12 ?>">
 				<?php if ( have_posts() ) : ?>
 
 					<?php if ( is_home() && ! is_front_page() ) : ?>

@@ -163,9 +163,11 @@ h2.entry-title a {
     width: 130px;
     color: #ffffff;
     font-weight: 900;
+    text-align: left;
+    padding-left: 24px;
 }
 
-input[type=text] {
+input[type=text], textarea {
     border-radius: 15px;
     border: 1px solid #d5d5d5;
 }
@@ -173,4 +175,69 @@ input[type=text] {
 .sidebar input[type=submit]:hover {
     background-position: 0 -920px;
     color: #1A368D;
+}
+
+#comments {
+    border-top: 1px solid #dedede;
+    padding-top: 24px;
+}
+
+#respond input[type=submit] {
+    background-image: url('img/mainbody_sprite.png');
+    background-repeat: no-repeat;
+    background-position: -155px -1000px;
+    text-align: left;
+    border: none;
+    background-color: transparent;
+    height: 60px;
+    line-height: 18px;
+    width: 260px;
+    color: #ffffff;
+    font-weight: 900;
+    padding: 0 0 12px 24px;
+    width: 100%;
+}
+
+#respond input[type=submit]:hover {
+    background-position: -155px 920px;
+    color: #1A368D;
+}
+
+.commentlist, .commentlist .children {
+    list-style: none;
+}
+
+.commentlist li {
+    border: 1px solid #dedede;
+    border-radius: 5px;
+    padding: 24px;
+}
+
+.commentlist li .comment-body .comment-author {
+    float: left;
+}
+
+.commentlist li .comment-body .comment-meta {
+    float: right;
+}
+
+.commentlist li .comment-body p {
+    clear: both;
+    border-top: 1px solid #dedede;
+    padding-top: 12px;
+}
+
+.header-image-container {
+    position: relative;
+}
+
+.header-text {
+    position: absolute;
+    top: 50%;
+    text-align: center;
+    width: 100%;
+    color: #ffffff;
+    font-size: 48px;
+    font-weight: 900;
+    margin-top: -24px;
 }

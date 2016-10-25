@@ -3,7 +3,7 @@
 <div id="primary" class="content-area">
 	<main id="main" class="site-main" role="main">
 		<div class="row">
-			<div class="col-xs-12 col-sm-8">
+			<div class="col-xs-12 col-sm-<?= is_active_sidebar( 'sidebar' ) ? 8 : 12 ?>">
 				<?php
 				while ( have_posts() ) : the_post();
 					get_template_part( 'template-parts/content', 'single' );
