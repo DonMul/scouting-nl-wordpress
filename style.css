@@ -6,7 +6,7 @@ Description: Default Wordpress Template for Scouting Nederland sites
 Version: 0.1
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
-Text Domain: zesc
+Text Domain: scouting-nl
 
 This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
@@ -75,6 +75,15 @@ h2 {
     font-size: 13px;
 }
 
+h2.entry-title a {
+    color: #31a529;
+    font-family: "Arial Black", Arial, Helvetica, sans-serif;
+    font-weight: 900;
+    font-size: 20px;
+    line-height: 20px;
+    margin: 0 0 20px 0;
+}
+
 /* MENU DROPDOWN ON HOVER */
 
 .sidebar-nav {
@@ -114,7 +123,6 @@ h2 {
     border-left: none;
     border-right: 6px solid #fff;
     border-bottom: 6px solid transparent;
-    left: 10px;
     top: 11px;
     left: -6px;
 }

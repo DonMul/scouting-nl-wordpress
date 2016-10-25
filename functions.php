@@ -2,10 +2,10 @@
 
 
 if (!is_admin()) {
-    add_action("wp_enqueue_scripts", "zesc_enqueue_scripts", 11);
+    add_action("wp_enqueue_scripts", "scouting_nl_enqueue_scripts", 11);
 }
 
-function zesc_enqueue_scripts() {
+function scouting_nl_enqueue_scripts() {
     wp_deregister_script('jquery');
 
     wp_register_script('scouting-jquery', "https://code.jquery.com/jquery-3.1.0.min.js", false, null);
@@ -18,13 +18,13 @@ function zesc_enqueue_scripts() {
     wp_enqueue_style('style-scouting', get_stylesheet_uri());
 }
 
-function zesc_setup() {
+function scouting_nl_setup() {
     // This theme uses wp_nav_menu() in two locations.
     register_nav_menus( array(
         'primary'   => __('Primary Menu', 'scouting' )
     ) );
 }
-add_action( 'after_setup_theme', 'zesc_setup' );
+add_action( 'after_setup_theme', 'scouting_nl_setup' );
 
 function create_bootstrap_menu( $theme_location ) {
     if ( ($theme_location) && ($locations = get_nav_menu_locations()) && isset($locations[$theme_location]) ) {
@@ -111,3 +111,5 @@ add_theme_support('custom-header', [
 ]);
 
 show_admin_bar( true );
+
+require get_template_directory() . '/inc/template-tags.php';
