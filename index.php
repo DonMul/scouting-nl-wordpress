@@ -3,7 +3,7 @@
 <div id="primary" class="content-area">
 	<main id="main" class="site-main" role="main">
 		<div class="row">
-			<div class="col-xs-12 col-lg-8">
+			<div class="col-xs-12 col-lg-<?= is_active_sidebar( 'sidebar' ) ? 8 : 12 ?>">
 				<?php if ( have_posts() ) : ?>
 
 					<?php if ( is_home() && ! is_front_page() ) : ?>
@@ -28,9 +28,9 @@
 
 					// Previous/next page navigation.
 					the_posts_pagination( array(
-						'prev_text'          => __( 'Previous page', 'twentysixteen' ),
-						'next_text'          => __( 'Next page', 'twentysixteen' ),
-						'before_page_number' => '<span class="meta-nav screen-reader-text">' . __( 'Page', 'twentysixteen' ) . ' </span>',
+						'prev_text'          => __( 'Previous page', 'scouting-nl' ),
+						'next_text'          => __( 'Next page', 'scouting-nl' ),
+						'before_page_number' => '<span class="meta-nav screen-reader-text">' . __( 'Page', 'scouting-nl' ) . ' </span>',
 					) );
 
 				// If no content, include the "No posts found" template.

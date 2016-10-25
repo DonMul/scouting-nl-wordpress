@@ -89,7 +89,7 @@ function create_bootstrap_menu( $theme_location ) {
 
 add_theme_support('widgets');
 
-function twentysixteen_widgets_init() {
+function scouting_nl_widgets_init() {
     register_sidebar( array(
         'name'          => __( 'Sidebar', 'scouting' ),
         'id'            => 'sidebar',
@@ -100,7 +100,7 @@ function twentysixteen_widgets_init() {
         'after_title'   => '</h2>',
     ) );
 }
-add_action( 'widgets_init', 'twentysixteen_widgets_init' );
+add_action( 'widgets_init', 'scouting_nl_widgets_init' );
 
 add_theme_support('custom-header', [
     'width' => 1200,
@@ -111,5 +111,3 @@ add_theme_support('custom-header', [
 ]);
 
 show_admin_bar( true );
-
-require get_template_directory() . '/inc/template-tags.php';
