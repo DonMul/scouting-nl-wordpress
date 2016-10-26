@@ -14,6 +14,11 @@ De template is nog wel sterk Work in Progress (het is nog niet af). Alle hulp is
 * Activeer het zojuist geinstalleerde thema
 
 ### Veranderingen
+#### 0.2
+* Footer toegevoegd
+* Extra styling voor post pagina's (comments) en zoekveld
+* Werkende pagina's (Pagina & Posts)
+
 #### 0.1
 * Toevoeging van het thema (Basis)
 * Juiste styling toegepast voor "normale" Wordpress Pagina's
@@ -33,6 +38,11 @@ This template is very much a work in progress. All help is welcome, especially s
 * Activate the installed theme
 
 ### Changelog
+#### 0.2
+* Added a footer
+* Added extra styling for post pages (comments) and search field in sidebar
+* ALl pages are working not (Pages & Posts)
+
 #### 0.1
 * Added the theme (Basis)
 * Added the right styling when using pages
